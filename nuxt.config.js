@@ -28,7 +28,16 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/fontawesome',
   ],
+  fontawesome:{
+    component: 'fa',
+    icons:{
+      // this is where we add the name of the icon
+      solid: ['faEnvelope'],
+      brands: true
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
